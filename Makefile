@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -g
+CFLAGS = -Wall -Wextra -std=gnu99 -g
 
 # Nomes dos executáveis de acordo com a especificação
 TARGET_SERVER = meu_servidor
