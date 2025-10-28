@@ -147,7 +147,9 @@ int main(int argc, char *argv[]) {
                 fprintf(stderr, "%s\n", buffer);
                 fclose(arquivo_saida);
                 remove(nome_arquivo_salvar);
-                break;
+                close(sockfd);
+                free(nome_arquivo_salvar);
+                return 1;
             }
             
             sucesso = true;

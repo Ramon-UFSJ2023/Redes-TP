@@ -138,7 +138,7 @@ void send_file(int socket, const char *path_arq){
     long file_tamanho = file_stat.st_size;
 
     const char *content_type = get_content_type(path_arq);
-    send_response(socket, "200 ok", content_type, NULL, file_tamanho);
+    send_response(socket, "200 OK", content_type, NULL, file_tamanho);
 
     char file_buffer[BUFFER_SIZE];
     ssize_t bytes_read;
