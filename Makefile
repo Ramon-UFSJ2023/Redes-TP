@@ -8,12 +8,14 @@ TARGET_CLIENT = meu_navegador
 all: $(TARGET_SERVER) $(TARGET_CLIENT)
 
 # Regra para construir o servidor
-$(TARGET_SERVER): servidor.c
-	$(CC) $(CFLAGS) -o $(TARGET_SERVER) servidor.c
+# ATUALIZADO: Aponta para o arquivo dentro da pasta Servidor/
+$(TARGET_SERVER): Servidor/servidor.c
+	$(CC) $(CFLAGS) -o $(TARGET_SERVER) Servidor/servidor.c
 
 # Regra para construir o cliente
-$(TARGET_CLIENT): cliente.c
-	$(CC) $(CFLAGS) -o $(TARGET_CLIENT) cliente.c
+# ATUALIZADO: Aponta para o arquivo dentro da pasta cliente/
+$(TARGET_CLIENT): cliente/cliente.c
+	$(CC) $(CFLAGS) -o $(TARGET_CLIENT) cliente/cliente.c
 
 clean:
 	rm -f $(TARGET_SERVER) $(TARGET_CLIENT)
