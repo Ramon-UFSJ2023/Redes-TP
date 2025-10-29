@@ -52,7 +52,13 @@ No outro terminal, rode o cliente:
 O cliente salva o arquivo baixado no diretório atual.
 Pra testar listagem de diretório ou baixar o arquivo index.html caso ele exista:
 
+é aconselhavel acessar diretamente pelo navegador após gerar o html, pela guia anonima para garantir que algum resto de cache não interfira.
 ./meu_navegador http://localhost:8080/
 
 
 Feito pra aprendizado e testes simples de HTTP. Pode ser extendido depois pra suportar mais métodos e funçoes.
+
+
+
+
+Meu IP local: 192.168.100.76
