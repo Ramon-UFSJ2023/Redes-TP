@@ -37,7 +37,7 @@ void parse_url(const char *url, char *host, int *port, char *path) {
         *port_inicial = '\0';
         *port = atoi(port_inicial + 1);
     } else {
-        *port = 80;
+        *port = 8080;
     }
 
     strcpy(host, hostPort_caminho);
