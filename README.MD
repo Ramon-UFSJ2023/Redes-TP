@@ -50,7 +50,7 @@ No outro terminal, rode o cliente:
 
 
 O cliente salva o arquivo baixado no diretório atual.
-Pra testar listagem de diretório:
+Pra testar listagem de diretório ou baixar o arquivo index.html caso ele exista:
 
 ./meu_navegador http://localhost:8080/
 

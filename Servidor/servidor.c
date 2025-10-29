@@ -77,7 +77,11 @@ void handle_connection(int cliente_socket, const char *base_dir){
     }
 
     char path_completo[PATH_MAX];
-    sprintf(path_completo, "%s%s", base_dir, path);
+    if (strcmp(path, "/") == 0) {
+        sprintf(path_completo, "%s", base_dir);
+    } else {
+        sprintf(path_completo, "%s%s", base_dir, path + 1); 
+    }
 
     if(strstr(path, "..") != NULL){
         send_not_found(cliente_socket);
