@@ -181,7 +181,7 @@ void send_directory_listing(int socket, const char *dirpath){
 }
 
 void send_not_found(int socket) {
-    const char *body = "<html><body><h1>404 Not Found</h1><p>O recurso solicitado não foi encontrado.</p></body></html>";
+    const char *body = "<html><body><h1>404 Not Found</h1><p>Hoje nao foi seu dia, tente amanha ;).</p></body></html>";
     send_response(socket, "404 Not Found", "text/html", body, -1);
 }
 
